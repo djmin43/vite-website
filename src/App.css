@@ -1,0 +1,15 @@
+.title {
+  font-size: 100px;
+  animation: fadein 3s ease
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+      transform: translateX(0)
+  }
+  to {
+      opacity: 1;
+      transform: translateX(100%)
+  }
+}
