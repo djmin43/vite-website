@@ -1,15 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .title {
   font-size: 100px;
-  animation: fadein 3s ease
+  animation: fadein 3s ease-in-out
+}
+
+.button {
+  width: 30vw;
+  height: 10vh;
+  font-size: 50px;
 }
 
 @keyframes fadein {
   from {
       opacity: 0;
-      transform: translateX(0)
   }
   to {
       opacity: 1;
-      transform: translateX(100%)
   }
 }
