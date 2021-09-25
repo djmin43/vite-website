@@ -5,7 +5,7 @@ import './App.css'
 const App= (): ReactElement => {
   return (
     <div>
-      <LandingPage />
+        <LandingPage />
     </div>
   )
 }

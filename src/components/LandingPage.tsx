@@ -1,42 +1,49 @@
 /** @jsx jsx */
 import React, { ReactElement } from 'react'
 import { jsx, css, keyframes } from '@emotion/react'
+import Button from './common/Button'
 
-const bounce = keyframes`
-  from, 20%, 53%, 80%, to {
-    transform: translate3d(0,0,0);
-    opacity: 0.5;
+const fade = keyframes`
+  from {
+    opacity: 0
   }
-
-  40%, 43% {
-    transform: translate3d(0, -30px, 0);
-    opacity: 1;
-  }
-
-  70% {
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    transform: translate3d(0,-4px,0);
+  to {
+    opacity: 1
   }
 `
 
-const hotpink = css({
+const intro = css({
   color: 'hotpink',
   fontSize: `100px`,
+  padding: '10vw',
+  textAlign: 'center',
+  animation: `${fade} 2s ease-in`,
   '&:hover': {
-    animation: `${bounce} 1s ease infinite`
   }
+})
+
+const landingPageLayout = css({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column'
 })
 
 const LandingPage = (): ReactElement => {
   return (
-    <p
-      css={hotpink}
+    <div
+      css={landingPageLayout}
     >
-      hello world
+    <p
+      css={intro}
+    >
+      안녕하세요 좋은 과일을 골라드립니다👩‍🌾
     </p>
+      <Button
+        name='시작하기'
+        buttonType='bigButton'
+      />
+  </div>
   )
 }
 
