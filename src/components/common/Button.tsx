@@ -5,18 +5,18 @@ import { jsx, SerializedStyles } from '@emotion/react'
 export interface ButtonProps {
   name: String
   buttonType: SerializedStyles
+  onClick: () => void
 }
 
-const Button = ({name, buttonType}: ButtonProps): ReactElement => {
+const Button = ({name, buttonType, onClick}: ButtonProps): ReactElement => {
 
   return (
-    <div>
       <button
+        onClick={onClick}
         css={buttonType}
       >
         {name}
       </button>
-    </div>
   )
 }
 

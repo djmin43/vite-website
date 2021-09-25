@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css } from '@emotion/react'
-import { fade } from './animation/keyframe'
+import { fade } from './animation/Keyframe.styles'
 
 export const intro = css({
   color: 'hotpink',
