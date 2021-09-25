@@ -2,15 +2,8 @@
 import React, { ReactElement } from 'react'
 import { jsx, css, keyframes } from '@emotion/react'
 import Button from './common/Button'
-
-const fade = keyframes`
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
-`
+import { bigButton } from '../styles/common/button'
+import { fade } from '../styles/animation/keyframe'
 
 const intro = css({
   color: 'hotpink',
@@ -41,7 +34,7 @@ const LandingPage = (): ReactElement => {
     </p>
       <Button
         name='시작하기'
-        buttonType='bigButton'
+        buttonType={bigButton}
       />
   </div>
   )
