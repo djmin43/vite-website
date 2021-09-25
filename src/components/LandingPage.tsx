@@ -25,7 +25,9 @@ const bounce = keyframes`
 const hotpink = css({
   color: 'hotpink',
   fontSize: `100px`,
-  animation: `${bounce} 1s ease infinite`
+  '&:hover': {
+    animation: `${bounce} 1s ease infinite`
+  }
 })
 
 const LandingPage = (): ReactElement => {
