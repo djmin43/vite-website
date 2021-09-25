@@ -1,15 +1,16 @@
 /** @jsx jsx */
-import React, { ReactElement } from 'react'
-import { jsx, css, keyframes } from '@emotion/react'
+import React, { ReactElement, useCallback } from 'react'
+import {useHistory} from 'react-router-dom';
+import { jsx } from '@emotion/react'
 import Button from './common/Button'
 import { bigButton } from '../styles/common/Button.styles'
 import { intro, landingPageLayout } from '../styles/LandingPage.styles'
 
 const LandingPage = (): ReactElement => {
 
-  const handleClick = () => {
-    console.log('click')
-  }
+  const history = useHistory()
+
+  const handleClick = useCallback(() => history.push('/home'), [history])
 
   return (
     <div
