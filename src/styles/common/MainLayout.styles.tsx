@@ -21,8 +21,8 @@ export const header = css({
   color: layoutColorTheme.black,
   background: layoutColorTheme.veryLight,
   height: '10vh',
-  fontSize: '20px',
-  paddingBottom: '1vw'
+  fontSize: 'calc(12px + 1vw)',
+  padding: '0 2vw 1vw 2vw'
 })
 
 export const footer = css({
