@@ -1,26 +1,10 @@
+
+/* font-family: 'Nanum Myeongjo', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Roboto&display=swap');
+
 body {
-  display: flex;
-  justify-content: center;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
-.title {
-  font-size: 100px;
-  animation: fadein 3s ease-in-out
-}
-
-.button {
-  width: 30vw;
-  height: 10vh;
-  font-size: 50px;
-}
-
-@keyframes fadein {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}

@@ -18,7 +18,7 @@ const WelcomeLanding = (): ReactElement => {
     <p
       css={intro}
     >
-      안녕하세요 좋은 과일을 골라드립니다👩‍🌾
+      맛있는 과일과 신선한 채소를 골라드려요👩‍🌾
     </p>
       <Button
         onClick={routeToMain}

@@ -8,25 +8,23 @@ const layoutColorTheme = {
   black: '#000000'
 }
 
-const basicLayoutRule = css({
+export const basicLayout = css({
   width: '100vw',
-  height: '19vh',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
   textAlign: 'center'
 })
 
-const header = css({
-  basicLayoutRule,
+export const header = css({
   color: layoutColorTheme.black,
   background: layoutColorTheme.primary,
+  height: '15vh',
   fontSize: '20px',
 })
 
-const footer = css({
-  basicLayoutRule,
+export const footer = css({
   color: layoutColorTheme.black,
   background: layoutColorTheme.light,
+  height: '20vh',
   fontSize: '12px',
 })
