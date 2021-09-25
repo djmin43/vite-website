@@ -15,23 +15,22 @@ export const basicLayout = css({
 })
 
 export const header = css({
+  height: '10vh',
+  padding: '1vw',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'flex-end',
   color: layoutColorTheme.black,
   background: layoutColorTheme.veryLight,
-  height: '10vh',
   fontSize: 'calc(12px + 1vw)',
-  padding: '0 2vw 1vw 2vw'
 })
 
 export const footer = css({
+  height: '20vh',
+  padding: '2vw',
   display: 'flex',
   flexDirection: 'column',
   color: layoutColorTheme.black,
   background: layoutColorTheme.light,
-  height: '20vh',
-  fontSize: '12px',
-  paddingTop: '2vw',
-  
+  fontSize: 'calc(8px + 1vw)',
 })
