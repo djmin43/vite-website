@@ -3,24 +3,7 @@ import React, { ReactElement } from 'react'
 import { jsx, css, keyframes } from '@emotion/react'
 import Button from './common/Button'
 import { bigButton } from '../styles/common/button'
-import { fade } from '../styles/animation/keyframe'
-
-const intro = css({
-  color: 'hotpink',
-  fontSize: `100px`,
-  padding: '10vw',
-  textAlign: 'center',
-  animation: `${fade} 2s ease-in`,
-  '&:hover': {
-  }
-})
-
-const landingPageLayout = css({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'column'
-})
+import { intro, landingPageLayout } from '../styles/LandingPage.styles'
 
 const LandingPage = (): ReactElement => {
   return (
