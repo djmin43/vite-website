@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react'
 import LandingPage from '../src/components/page/landing/LandingPage'
 import MainPage from '../src/components/page/main/MainPage'
+import MainLayout from './components/elements/common/MainLayout'
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,9 +18,9 @@ const App= (): ReactElement => {
             <LandingPage />
           </Route>
           <Route exact path='/main'>
-            main header
-            <MainPage />
-            main footer
+            <MainLayout>
+              <MainPage />
+            </MainLayout>
           </Route>
         </Switch>
       </Router>
