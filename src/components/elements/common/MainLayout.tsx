@@ -13,13 +13,14 @@ const MainLayout = ({children}: Props) => {
       <div
         css={[basicLayout, header]}
       >
-        과일
+        🍅🍇🍈🍉🍊🍋🍌🍍🥝🍎🍏🍐🍑🍒🍓🥑🥥🥭🫐🥕
       </div>
       {children}
       <div
         css={[basicLayout, footer]}
       >
-        footer
+        <p>만든사람: 민동준</p>
+        <p>이메일주소: dj.min43@gmail.com</p>
       </div>
     </div>
   )
