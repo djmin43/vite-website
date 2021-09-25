@@ -10,7 +10,7 @@ const LandingPage = (): ReactElement => {
 
   const history = useHistory()
 
-  const handleClick = useCallback(() => history.push('/home'), [history])
+  const routeToHome = useCallback(() => history.push('/home'), [history])
 
   return (
     <div
@@ -22,7 +22,7 @@ const LandingPage = (): ReactElement => {
       안녕하세요 좋은 과일을 골라드립니다👩‍🌾
     </p>
       <Button
-        onClick={handleClick}
+        onClick={routeToHome}
         name='시작하기'
         buttonType={bigButton}
       />
