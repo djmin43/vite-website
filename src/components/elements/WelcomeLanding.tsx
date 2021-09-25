@@ -2,15 +2,15 @@
 import React, { ReactElement, useCallback } from 'react'
 import {useHistory} from 'react-router-dom';
 import { jsx } from '@emotion/react'
-import Button from './common/Button'
-import { bigButton } from '../styles/common/Button.styles'
-import { intro, landingPageLayout } from '../styles/LandingPage.styles'
+import Button from './common/BasicButton'
+import { bigButton } from '../../styles/common/Button.styles'
+import { intro, landingPageLayout } from '../../styles/landing/WelcomeLanding.styles'
 
-const LandingPage = (): ReactElement => {
+const WelcomeLanding = (): ReactElement => {
 
   const history = useHistory()
 
-  const routeToHome = useCallback(() => history.push('/home'), [history])
+  const routeToHome = useCallback(() => history.push('/main'), [history])
 
   return (
     <div
@@ -30,4 +30,4 @@ const LandingPage = (): ReactElement => {
   )
 }
 
-export default LandingPage
+export default WelcomeLanding

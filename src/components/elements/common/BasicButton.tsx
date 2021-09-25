@@ -8,7 +8,7 @@ export interface ButtonProps {
   onClick: () => void
 }
 
-const Button = ({name, buttonType, onClick}: ButtonProps): ReactElement => {
+const BasicButton = ({name, buttonType, onClick}: ButtonProps): ReactElement => {
 
   return (
       <button
@@ -20,4 +20,4 @@ const Button = ({name, buttonType, onClick}: ButtonProps): ReactElement => {
   )
 }
 
-export default Button
+export default BasicButton

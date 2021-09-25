@@ -1,11 +1,10 @@
 import React, { ReactElement, useState } from 'react'
-import LandingPage  from './components/LandingPage'
-import Home from './components/Home'
+import LandingPage from '../src/components/page/landing/LandingPage'
+import MainPage from '../src/components/page/main/MainPage'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from 'react-router-dom'
 
 
@@ -17,8 +16,10 @@ const App= (): ReactElement => {
           <Route exact path='/'>
             <LandingPage />
           </Route>
-          <Route exact path='/home'>
-            <Home />
+          <Route exact path='/main'>
+            main header
+            <MainPage />
+            main footer
           </Route>
         </Switch>
       </Router>

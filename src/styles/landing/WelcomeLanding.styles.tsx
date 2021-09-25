@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css } from '@emotion/react'
-import { landingPageTitleAnimation } from './animation/Keyframe.styles'
+import { landingPageTitleAnimation } from '../animation/Keyframe.styles'
 
 export const intro = css({
   color: 'hotpink',
