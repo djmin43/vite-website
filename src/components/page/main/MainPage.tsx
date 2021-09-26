@@ -5,13 +5,17 @@ import {
   Route,
 } from 'react-router-dom'
 import MainSite from '../../elements/MainSite'
+import FruitAndVege from '../../elements/FruitAndVege'
 
 const MainPage = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path='/main/'>
+        <Route exact path='/main'>
           <MainSite />
+        </Route>
+        <Route exact path='/fruit'>
+          <FruitAndVege />
         </Route>
       </Switch>
     </Router>
