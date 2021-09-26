@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useCallback } from 'react'
+import { useHistory } from 'react-router'
 import { jsx } from '@emotion/react'
 import { basicLayout, header, footer } from '../../../styles/common/MainLayout.styles'
 
@@ -9,7 +10,11 @@ interface Props {
 
 const MainLayout = ({children}: Props) => {
 
-  const reloadMainSite = () => {
+  const history = useHistory()
+  const routeToMain = useCallback(() => history.push(`/main`), [history])
+
+  const reloadToMainSite = () => {
+    routeToMain()
     location.reload()
   }
 
@@ -17,7 +22,7 @@ const MainLayout = ({children}: Props) => {
     <div>
       <div
         css={[basicLayout, header]}
-        onClick={reloadMainSite}
+        onClick={reloadToMainSite}
       >
         🍅🍇🍈🍉🍊🍋🍌🍍🥝🍎🍏🍐🍑🍒🍓🥑🥥🥭🫐🥕
       </div>
