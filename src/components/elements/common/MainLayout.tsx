@@ -8,10 +8,16 @@ interface Props {
 }
 
 const MainLayout = ({children}: Props) => {
+
+  const reloadMainSite = () => {
+    location.reload()
+  }
+
   return (
     <div>
       <div
         css={[basicLayout, header]}
+        onClick={reloadMainSite}
       >
         🍅🍇🍈🍉🍊🍋🍌🍍🥝🍎🍏🍐🍑🍒🍓🥑🥥🥭🫐🥕
       </div>
