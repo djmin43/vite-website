@@ -14,7 +14,7 @@ const MainPage = () => {
         <Route exact path='/main'>
           <MainSite />
         </Route>
-        <Route exact path='/fruit'>
+        <Route exact path='/:id'>
           <FruitAndVege />
         </Route>
       </Switch>

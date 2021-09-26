@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 interface Param {
@@ -6,8 +6,11 @@ interface Param {
 }
 
 const FruitAndVege = () => {
-
   const { id }: Param = useParams()
+
+  useEffect(() => {
+    console.log('i am going to fetch ' + id)
+  }, [])
 
   return (
     <div>

@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from 'react'
 import LandingPage from '../src/components/page/landing/LandingPage'
 import MainPage from '../src/components/page/main/MainPage'
 import MainLayout from './components/elements/common/MainLayout'
+import NotFoundPage from './components/page/NotFoundPage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,9 @@ const App= (): ReactElement => {
             <MainLayout>
               <MainPage />
             </MainLayout>
+          </Route>
+          <Route path='*'>
+            <NotFoundPage />
           </Route>
         </Switch>
       </Router>
